@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bio-data Form</h1>
+        <form id="biodataForm">
+            <h3>Personal Information</h3>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" value="Otene Joshua Josiah">
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" value="2008-07-09">
+
+            <h3>Educational Information</h3>
+            <label for="school">School</label>
+            <input type="text" id="school" value="Federal University of Technology, Minna">
+
+            <label for="faculty">Faculty</label>
+            <input type="text" id="faculty" value="School of Information Communication and Technology">
+
+            <label for="department">Department</label>
+            <input type="text" id="department" value="Software Engineering">
+
+            <label for="matric">Matric Number</label>
+            <input type="text" id="matric" value="2025/1/105915SW">
+            <a class="matric-link" id="matricLink" href="#" target="_blank">Open Personal Webpage</a>
+
+            <label for="level">Level</label>
+            <input type="text" id="level" value="100lv">
+
+            <h3>Address & Contact</h3>
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" value="09057564306">
+
+            <label for="homeAddress">Home Address</label>
+            <textarea id="homeAddress">Along Power line, Rugan Maliki, Mararaba, Karu, Nasarawa State</textarea>
+
+            <label for="schoolAddress">School Address</label>
+            <textarea id="schoolAddress">Gidan Kwano Campus, Minna, Niger State</textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div class="output" id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
